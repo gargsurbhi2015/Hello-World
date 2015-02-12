@@ -2,6 +2,8 @@ package hello
 
 import org.springframework.boot.SpringApplication
 import org.springframework.web.bind.annotation.{RequestMapping, RestController}
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.http.HttpMethod
 
 /**
  * This object bootstraps Spring Boot web application.
