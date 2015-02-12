@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.{RequestMapping, RestController}
  * This object bootstraps Spring Boot web application.
  * Via Gradle: gradle bootRun
  *
- * @author saung
+ * @author surbhi garg
  * @since 1.0
  */
 object HelloWebApplication {
@@ -18,9 +18,11 @@ object HelloWebApplication {
 }
 
 @RestController
+
 class HelloWorld
 {
-  @RequestMapping(Array{"/"})
+ // @RequestMapping(Array{"/"})
+ @RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
   def sayHello(): String =
   {
     "Hello World!!!"
